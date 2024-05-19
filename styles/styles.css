@@ -1,29 +1,29 @@
 /* Place your CSS styles in this file */
 @font-face {
     font-family: Stalker; /* Гарнитура шрифта */
-    src: local(stalker), url(../fonts/amazs_t_a_l_k_e_r_v_3_0.ttf);
+    src: local(stalker), url(../fonts/8953.ttf);
 }
 
 h1 {
     text-align: center;
     font-family: Stalker, "Source Sans Pro";
     font-weight: normal;
-    margin: 10px auto 20px;
-    font-size:120px;
+    margin: 10px auto 10px;
+    font-size:100px;
     color:#FF0000;
 }
 
 p {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 10px auto 20px;
+    margin: 10px auto 50px;
     font-size:24px;
     color:#008000;
 }
 
 .link_logo {
     width:550px;
-    height:550px;
+    height:474px;
     text-align: center;
     margin: 10px auto 20px;
     display: block;
