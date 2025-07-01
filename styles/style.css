@@ -1,0 +1,167 @@
+
+body {
+  margin: 0;
+  font-family: 'Russo One', sans-serif;
+  background: url('../images/background.jpg') center/cover no-repeat fixed;
+  color: #f0f0f0;
+}
+
+.main-header {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 2rem 1rem;
+}
+.logo {
+  max-width: 300px;
+  margin-bottom: 1rem;
+}
+h1 {
+  color: #d22730;
+  margin: 0;
+}
+.subtitle {
+  margin-top: 0.5rem;
+  color: #ccc;
+}
+.download-btn {
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  background-color: #d22730;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 4px;
+  display: inline-block;
+}
+.download-btn:hover {
+  background-color: #a91b24;
+}
+
+.about {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  max-width: 900px;
+  margin: 2rem auto;
+  border-left: 8px solid #007a33;
+}
+
+.about h2 {
+  color: #007a33;
+}
+
+.gallery-section {
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.gallery-section h2 {
+  text-align: center;
+  color: #007a33;
+  margin-bottom: 1rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.gallery img {
+  width: 100%;
+  border: 2px solid #007a33;
+  border-radius: 4px;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #111;
+  font-size: 0.9rem;
+}
+.footer a {
+  color: #007a33;
+  text-decoration: none;
+}
+
+.video-section {
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.video-section h2 {
+  text-align: center;
+  color: #007a33;
+  margin-bottom: 1rem;
+}
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+}
+.video-wrapper iframe {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+  border: 2px solid #007a33;
+}
+.gallery a img {
+  transition: transform 0.3s ease;
+}
+.gallery a img:hover {
+  transform: scale(1.03);
+}
+
+/* Lightbox override back button (imitated via escape) */
+.lb-data .lb-number {
+  color: #007a33;
+  font-size: 0.85rem;
+}
+.lb-data .lb-caption {
+  font-size: 0.95rem;
+}
+
+/* Панель навигации скриншотов */
+.nav-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.95);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  overflow-y: auto;
+  animation: fadeIn 0.3s ease;
+}
+.nav-container {
+  position: relative;
+  max-width: 90%;
+  padding: 2rem;
+}
+.nav-thumbnails {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 1rem;
+}
+.nav-thumbnails img {
+  width: 100%;
+  cursor: pointer;
+  border: 2px solid #007a33;
+  transition: transform 0.2s ease;
+}
+.nav-thumbnails img:hover {
+  transform: scale(1.05);
+}
+.nav-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}

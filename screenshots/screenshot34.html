@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Скриншот 33</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../styles/style.css" />
+  <link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet" />
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background: url('../images/background.jpg') center/cover no-repeat fixed;
+      font-family: 'Russo One', sans-serif;
+      color: #f0f0f0;
+      overflow: hidden;
+    }
+    .page-container {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      gap: 1.2rem;
+    }
+    .screenshot {
+      max-height: 80vh;
+      max-width: 95vw;
+      border: 6px solid #007a33;
+      border-radius: 8px;
+    }
+    .nav-buttons {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .nav-buttons a {
+      padding: 0.8rem 1.5rem;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 4px;
+    }
+    .nav-prev, .nav-next {
+      background-color: #d22730;
+      color: white;
+    }
+    .nav-prev:hover, .nav-next:hover {
+      background-color: #a91b24;
+    }
+    .nav-home {
+      background-color: #007a33;
+      color: white;
+    }
+    .nav-home:hover {
+      background-color: #005622;
+    }
+  </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'ArrowLeft') {
+          window.location.href = 'screenshot33.html';
+        } else if (e.key === 'ArrowRight') {
+          window.location.href = 'screenshot35.html';
+        }
+      });
+    });
+  </script>
+</head>
+<body>
+  <div class="page-container">
+    <h1>Скриншот 33 из 81</h1>
+    <img class="screenshot" src="../images/gallery/screenshot34.jpg" alt="Screenshot 34" />
+    <div class="nav-buttons">
+      <a class="nav-prev" href="screenshot33.html">← Назад</a>
+      <a class="nav-home" href="../index.html">Домой</a>
+      <a class="nav-next" href="screenshot35.html">Вперёд →</a>
+    </div>
+  </div>
+</body>
+</html>
